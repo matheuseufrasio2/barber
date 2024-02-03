@@ -2,7 +2,7 @@ import { Badge } from '@/app/_components/ui/badge'
 import { Button } from '@/app/_components/ui/button'
 import { Card, CardContent } from '@/app/_components/ui/card'
 import { Barbershop } from '@/app/types'
-import { Star, StarIcon } from 'lucide-react'
+import { StarIcon } from 'lucide-react'
 import Image from 'next/image'
 
 interface BarberShopItemProps {
