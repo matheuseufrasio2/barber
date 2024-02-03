@@ -9,7 +9,7 @@ export function Header() {
     <Card className="rounded-none">
       <CardContent className="flex items-center justify-between p-5">
         <Image src="/logo.png" alt="Barber" height={22} width={120} />
-        <Button variant="outline" size="icon" className="h-8 w-8">
+        <Button variant="ghost" size="icon" className="h-8 w-8">
           <MenuIcon size={18} />
         </Button>
       </CardContent>
