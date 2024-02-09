@@ -4,6 +4,7 @@ import { Card, CardContent } from '@/app/_components/ui/card'
 import { Barbershop } from '@/app/types'
 import { StarIcon } from 'lucide-react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 interface BarberShopItemProps {
   barbershop: Barbershop
@@ -46,8 +47,8 @@ export function BarberShopItem({ barbershop }: BarberShopItemProps) {
           <p className="overflow-hidden text-ellipsis text-nowrap text-sm text-gray-400">
             {barbershop.address}
           </p>
-          <Button className=" mt-3 w-full" variant="secondary">
-            Reservar
+          <Button asChild className=" mt-3 w-full" variant="secondary">
+            <Link href={`/barbershops/${barbershop.id}`}>Reservar</Link>
           </Button>
         </div>
       </CardContent>
